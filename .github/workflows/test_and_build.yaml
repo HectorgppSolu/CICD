@@ -33,6 +33,5 @@ jobs:
     -name: Build and push
      uses: docker/build-push-action@v7
      with:
-          context: "{{defaultContext}}:mysubdir"
           push: true
-          tags: ghcr.io/HectorgppSolu/CICD:latest
+          tags: ghcr.io/hectorgppsolu/CICD:latest
