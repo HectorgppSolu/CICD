@@ -1,0 +1,41 @@
+# Versionamiento
+.git
+.gitignore
+
+# Ambientes virtuales
+env/
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Archivos del sistema
+Thumbs.db
+
+# Documentación
+docs/
+*.md
+
+# Otros
+.env
+.env.local
+*.log

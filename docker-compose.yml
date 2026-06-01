@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cicd-app
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./src:/app/src
+    restart: unless-stopped
