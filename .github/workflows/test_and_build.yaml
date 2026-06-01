@@ -22,8 +22,8 @@ jobs:
     - name: Check linting
       run: ruff check .
     - name: Test with pytest
-      run: pytest tests.py
       working-directory: src
+      run: pytest tests.py
     - name: Login to GitHub Container Registry
       uses: docker/login-action@v4
       with:
