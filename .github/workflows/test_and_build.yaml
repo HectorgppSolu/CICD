@@ -28,10 +28,9 @@ jobs:
      with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-      
+          password: ${{ secrets.GITHUB_TOKEN }}   
     -name: Build and push
      uses: docker/build-push-action@v7
      with:
           push: true
-          tags: ghcr.io/hectorgppsolu/CICD:latest
+          tags: ghcr.io/hectorgppsolu/cicd:latest
